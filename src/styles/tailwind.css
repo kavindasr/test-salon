@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-sm font-normal leading-4 text-black;
+}
+
+/************ Common classes ************/
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+.flex-left {
+  @apply flex items-start justify-start;
+}
+
+
+/************ Styles ************/
+.main {
+  @apply flex-col px-2 py-5 xs:flex-row flex-between;
+}
+
+.slider {
+  @apply flex items-center justify-center p-5 bg-theme-light text-theme-primary-300;
+
+}
+
+/* Form and input fields styles */
+.login-signup-wrapper {
+  @apply flex items-center justify-center min-h-screen p-5 mx-auto my-0 ;
+}
+
+.input-fields-wrapper {
+  @apply w-full;
+}
+
+.input-fields-wrapper label {
+  @apply block text-base font-medium mb-0.5;
+}
+
+.input-style {
+  @apply h-12 w-full  rounded outline-none py-px pl-3.5 pr-0.5 bg-transparent border border-input-border hover:border-white focus:border-button-primary;
+
+}
+
+.input-err-style {
+  @apply border-danger;
+}
+
+.err-tag {
+  @apply block h-5 text-sm text-right text-danger border-danger;
+}
+
+/* Card styles */
+.card {
+  @apply w-full p-5 bg-white rounded drop-shadow;
+}
+
+.card-page-title {
+  @apply mb-2 text-lg font-semibold sm:text-2xl sm:mb-4;
+}
+
+.card-page-info {
+  @apply mb-2 text-sm font-normal break-words sm:text-base sm:mb-5;
+}
+
+/* To add unique(uni) gap between any of 2 element */
+.mt-uni-gap {
+  @apply mt-2 sm:mt-4;
+}
+
+/* btn styles */
+.btn.btn-primary,
+.btn.btn-primary.MuiButton-root {
+  @apply text-center p-4 bg-theme-primary-300 w-full text-base  border-theme-primary-300 text-white disabled:bg-[#E6E6E6] disabled:text-[#444444];
+}
+
+.btn.btn-outline,
+.btn.btn-outline.MuiButton-root {
+  @apply text-center border p-4 border-theme-primary-300 text-theme-primary-300 w-full text-base disabled:bg-[#E6E6E6] disabled:text-[#444444];
+}
+
+.btn-link {
+  @apply block text-base font-medium text-center text-theme-primary-300;
+}
+
+input{
+  @apply bg-transparent border !border-input-border hover:!border-white focus:!border-button-primary
+}
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+input:-internal-autofill-selected  {
+  -webkit-box-shadow: 0 0 0 30px #111827 inset !important;
+}

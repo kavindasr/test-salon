@@ -1,0 +1,30 @@
+.card{
+  @apply bg-white p-3 rounded-lg py-5
+}
+
+/* .MuiInputBase-input {
+ @apply !border-primary !border outline-0
+}
+
+.MuiInputBase-input:hover{
+  @apply !border-secondary !border
+} */
+
+/* .MuiInputBase-root{
+  border: 0px;
+  outline: 0px;
+  border-radius: 0px !important;
+}
+
+.MuiInputBase-input{
+  border: #0F76BC !important;
+}
+
+.MuiPaper-root{
+  box-shadow: none;
+  border-radius: 2px !important;
+} */
+
+/* .MuiFormLabel-root{
+  background-color: #0F76BC;
+} */
